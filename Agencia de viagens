@@ -1,0 +1,49 @@
+Algoritmo "Cadastrodeviagensgonsil"
+const
+numeromaximopassageiros=10
+Var
+idade,npassageiros,oper:inteiro
+nome,destino,nomepassageiro:caracter
+vet: vetor [1..numeromaximopassageiros] de inteiro
+ind:inteiro
+
+Inicio
+
+  	escreva ("Digite seu nome: ")
+   leia (nome)
+   escreva ("Insira sua idade: ")
+   leia (idade)
+   escreva ("Informe o seu destino: ")
+   leia (destino)
+   escreva ("Informe a quantidade de passageiros: ")
+   leia (npassageiros)
+   
+     para ind de 1 ate npassageiros faca
+    	escreva ("Informe o nome do passageiro : ")
+    	leia (vet [ind])
+    fimpara
+
+   escreva ("Digite a Classe de vôo: (1-Economica ou 2-Primeira classe): ")
+   leia (oper)
+      escolha oper
+   caso 1
+      escreval ("Economica")
+   caso 2
+      escreval ("Primeira classe")
+   outrocaso
+      escreval ("Operação deve ser 1 ou 2")
+      fimescolha
+      Se (oper=1) ou (oper=2) entao
+  Escreval( "Abaixo as informações da viagem:")
+   Escreval("Cliente:",nome)
+   Escreval("Idade:",idade," anos")
+   Escreval("Destino:",destino)
+   Escreval("Quantidade de passageiros:",npassageiros)
+        fimse
+
+Fimalgoritmo
+
+
+
+
+
